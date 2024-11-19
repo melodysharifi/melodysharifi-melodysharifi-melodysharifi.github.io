@@ -1,36 +1,120 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #fdf5f9;
-    color: #333;
+    box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f3f9; /* Soft neutral background */
+    color: #333; /* Neutral text color */
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
 header {
-    background-color: #d6c6d2;
+    background-color: #d9c9d2; /* Muted pinkish-neutral */
+    color: #333;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin: 15px 0;
 }
 
 nav a {
-    margin: 0 15px;
     text-decoration: none;
-    color: #5c4b51;
+    color: #5c4b51; /* Neutral link color */
+    font-weight: 700;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #a7869f; /* Hover pink accent */
+    color: #fff; /* White text on hover */
 }
 
+/* Main Content */
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+main h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Footer */
 footer {
-    background-color: #d6c6d2;
+    background-color: #d9c9d2;
+    color: #333;
     text-align: center;
-    padding: 10px;
+    padding: 15px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+}
+
